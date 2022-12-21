@@ -1,0 +1,30 @@
+.Loading{
+    position: absolute;
+    z-index: 1000;
+    top: 0; bottom: 0; right: 0; left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Spinner{
+    border-radius: 50%;
+    border: 7px solid #cecece;
+    border-bottom: 7px solid #00ff99;
+    width: 70px;
+    height: 70px;
+
+    animation-name: rotation;
+    animation-timing-function: linear;
+    animation-duration: .5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotate(0deg);
+    } to{
+        transform: rotate(360deg);
+    }
+}
